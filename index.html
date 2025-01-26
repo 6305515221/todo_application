@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mun.css">
+</head>
+<body>
+    <div class="bg_container">
+        <div>
+            <h1 style="color: rgb(241, 232, 238); padding-top: 40px;">TOTAL AMOUNT <span id="amount">0</span></h1>
+        </div>
+        <div class="form_content" id="formContainer" style="display: none;">
+            <label>ITEM NAME</label> <br>
+            <input type="text" id="itemname" placeholder="Enter the item name" required> <br>
+            <label>AMOUNT</label> <br>
+            <input type="number" id="input" placeholder="Enter the amount" required> <br>
+            <label>Quantity</label> <br>
+            <input type="number" id="quantity" placeholder="Enter the quantity" required> <br>
+        </div>
+        <button class='addbutton' onclick="add()">ADD</button>
+        <button class="itembutton" onclick="toggleForm()">ITEM</button>
+        <button class='substractbutton' onclick="subtract()">SUBSTRACT</button>
+        
+
+       
+        <div id="totaloutput">
+
+        </div>
+    </div>
+</body>
+<script src="mun.js"></script>
+</html>
